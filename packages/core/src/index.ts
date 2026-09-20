@@ -1,0 +1,10 @@
+export { AuthService, type AuthServiceOptions } from "./auth/auth-service.js";
+export { ScryptPasswordHasher, sha256Hex } from "./crypto/hasher.js";
+export { randomId, randomToken } from "./crypto/random.js";
+export { AuthError, err, ok, type AuthErrorCode, type Result } from "./errors.js";
+export type { PasswordHasher, SessionStore, UserRepository } from "./ports.js";
+export { can, defineRoles, permissionsForRoles, type Permission, type RoleDefinition } from "./rbac.js";
+export { loginSchema, registerSchema, type LoginInput, type RegisterInput } from "./schemas.js";
+export { InMemorySessionStore, InMemoryUserRepository } from "./stores/memory.js";
+export { TokenService, type TokenServiceOptions } from "./tokens/token-service.js";
+export { toPublicUser, type AccessTokenPayload, type PublicUser, type RefreshSession, type TokenPair, type User } from "./types.js";
